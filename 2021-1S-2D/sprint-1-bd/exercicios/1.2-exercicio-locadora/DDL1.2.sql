@@ -6,8 +6,8 @@ USE empresas;
 --Criação de tabelas 
 CREATE TABLE Empresa
 (
-	idEmpresa INT PRIMARY KEY IDENTITY
-	,nome VARCHAR(100) NOT NULL
+	idEmpresa	INT PRIMARY KEY IDENTITY
+	,nome		VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE Veículos
