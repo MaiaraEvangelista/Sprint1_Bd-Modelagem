@@ -12,8 +12,8 @@ VALUES            ('Ford')
 INSERT INTO Clientes(Nome, CPF)
 VALUES				('Saulo')
 				    ,('Caique')
-			        ,('1E+11')
-					,('8.8889E+10');
+			        ,('99999999999')
+					,('88888888888');
 
 INSERT INTO Modelos(Descrição, IdMarca)
 VALUES             ('Fiesta', 1)

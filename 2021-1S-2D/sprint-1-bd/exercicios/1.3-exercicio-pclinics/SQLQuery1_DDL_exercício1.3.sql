@@ -44,7 +44,6 @@ CREATE TABLE Pets
 	,DataDeNascimento VARCHAR(200) NOT NULL
 );
 
-
 CREATE TABLE Atendimentos
 (
 	idAtendimentos INT PRIMARY KEY IDENTITY

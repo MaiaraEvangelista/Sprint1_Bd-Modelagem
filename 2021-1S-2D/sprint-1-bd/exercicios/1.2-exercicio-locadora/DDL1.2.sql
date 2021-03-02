@@ -1,7 +1,7 @@
 --Criação da instância empresas
-CREATE DATABASE empresas;
+CREATE DATABASE Empresas;
 
-USE empresas;
+USE Empresas;
 
 --Criação de tabelas 
 CREATE TABLE Empresa

@@ -17,10 +17,10 @@ VALUES               ('Cachorro')
 					,('Gato');
 
 INSERT INTO Raças(Descrição, idTiposPet)
-VALUES			 ('Poodle')
-				 ,('Labrador')
-				 ,('SRD')
-				 ,('Siamês');
+VALUES			 ('Poodle', 1)
+				 ,('Labrador', 1)
+				 ,('SRD', 1)
+				 ,('Siamês', 2);
 
 INSERT INTO Atendimentos(Descrição, DataAtendimento, idVeterinário, idPets)
 VALUES					('Restam 10 dias de vida', '22/01/2019', 1, 1)
