@@ -1,15 +1,14 @@
 USE HRoads;
 
-INSERT INTO Personagens(Nomes, VidaMáxima, ManaMáxima, DataAtualização, DataCriação, idClasses)
-VALUES	 ('DeuBug', 100, 80, 'DataAtual', '18/01/2019', 1)
-		,('Aurion', 80, 100, 'DataAtual', '20/02/2020', 4)
-		,('Klaus', 120, 50, 'DataAtual', '25/12/1996', 2)
-		,('Valante', 40, 90, 'DataAtual', '06/03/2022', 3)
-		,('Merlin', 50, 150, 'DataAtual', '10/05/1250', 7)
-		,('Alucard', 250, 200, 'DataAtual', '12/12/2012', 5)
-		,('Conan', 140, 0, 'DataAtual', '03/03/2000', 1);
+INSERT INTO Personagens(Nomes, VidaMaxima, ManaMaxima, DataAtualizacao, DataCriacao, idClasses)
+VALUES	 ('DeuBug', 100, 80, GETDATE(), '18/01/2019', 1)
+		,('BitBug', 80, 100, GETDATE(), '20/02/2020', 4)
+		,('Fer8', 120, 50, GETDATE(), '25/12/1996', 2);
 
-INSERT INTO Habilidades(Técnicas)
+DELETE FROM Personagens;
+TRUNCATE TABLE Personagens;
+
+INSERT INTO Habilidades(Tecnicas)
 VALUES		('Lança Mortal')
 			,('Escudo Supremo')
 			,('Recuperar Vida');
@@ -37,3 +36,11 @@ VALUES		('Bárbaro')
 			,('Necromante')
 			,('Feiticeiro')
 			,('Arcanista');
+
+UPDATE Personagens
+SET Nomes = 'Fer7'
+WHERE idPersonagem = 3;
+
+UPDATE Classes
+SET Cargos = 'Necromancer'
+WHERE idClasses = 5;
