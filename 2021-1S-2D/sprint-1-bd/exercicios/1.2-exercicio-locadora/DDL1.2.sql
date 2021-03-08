@@ -10,9 +10,9 @@ CREATE TABLE Empresa
 	,nome		VARCHAR(100) NOT NULL
 );
 
-CREATE TABLE Veículos
+CREATE TABLE Veiculos
 (
-	idVeículos	INT PRIMARY KEY IDENTITY
+	idVeiculos	INT PRIMARY KEY IDENTITY
 	,idEmpresa	INT FOREIGN KEY REFERENCES Empresa(idEmpresa)
 	,idMarcas	INT FOREIGN KEY REFERENCES Marcas(idMarca)
 	,idModelo   INT FOREIGN KEY REFERENCES Modelos(idModelo)
@@ -22,7 +22,7 @@ CREATE TABLE Veículos
 CREATE TABLE Aluguel
 (
 	idAlugueis	INT PRIMARY KEY IDENTITY
-	,idVeículos INT FOREIGN KEY REFERENCES Veículos(idVeículos)
+	,idVeiculos INT FOREIGN KEY REFERENCES Veículos(idVeiculos)
 	,idCliente	INT FOREIGN KEY REFERENCES Clientes(idCliente)
 	,dataInicio VARCHAR(100) NOT NULL
 	,dataFim	VARCHAR(100) NOT NULL
@@ -45,5 +45,5 @@ CREATE TABLE Modelos
 (
 	idModelo	INT PRIMARY KEY IDENTITY
 	,idMarca	INT FOREIGN KEY REFERENCES Marcas(idMarca)
-	,descrição	VARCHAR(100) NOT NULL
+	,descricao	VARCHAR(100) NOT NULL
 );
